@@ -59,7 +59,8 @@ class ContactList(QMainWindow):
         self.remove_button.clicked.connect(self.on_remove_contact)
 
     def on_add_contact(self):
-        """Handles the event when Add Contact button is clicked."""
+        #Handles the event when Add Contact button is clicked.
+        
         name = self.contact_name_input.text().strip()
         phone = self.phone_input.text().strip()
 
@@ -77,7 +78,7 @@ class ContactList(QMainWindow):
 
     def on_remove_contact(self):
         #Handles the event when Remove Contact button is clicked.
-        
+
         selected_row = self.contact_table.currentRow()
         if selected_row >= 0:
             name_item = self.contact_table.item(selected_row, 0)
