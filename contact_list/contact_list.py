@@ -54,13 +54,14 @@ class ContactList(QMainWindow):
         self.setCentralWidget(container)
 
     def __connect_signals(self):
-        """Connects button signals to their respective slots."""
+        #Connects button signals to their respective slots.
+        
         self.add_button.clicked.connect(self.on_add_contact)
         self.remove_button.clicked.connect(self.on_remove_contact)
 
     def on_add_contact(self):
         #Handles the event when Add Contact button is clicked.
-        
+
         name = self.contact_name_input.text().strip()
         phone = self.phone_input.text().strip()
 
