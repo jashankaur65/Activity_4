@@ -20,10 +20,9 @@ class ContactList(QMainWindow):
         self.__connect_signals()
 
     def __initialize_widgets(self):
-        """Initializes the widgets on this Window.
+        #Initializes the widgets on this Window.
         
-        DO NOT EDIT.
-        """
+       
         self.setWindowTitle("Contact List")
 
         self.contact_name_input = QLineEdit(self)
@@ -55,7 +54,7 @@ class ContactList(QMainWindow):
 
     def __connect_signals(self):
         #Connects button signals to their respective slots.
-        
+
         self.add_button.clicked.connect(self.on_add_contact)
         self.remove_button.clicked.connect(self.on_remove_contact)
 
