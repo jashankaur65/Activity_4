@@ -76,7 +76,8 @@ class ContactList(QMainWindow):
             QMessageBox.warning(self, "Input Error", "Both name and phone number are required.")
 
     def on_remove_contact(self):
-        """Handles the event when Remove Contact button is clicked."""
+        #Handles the event when Remove Contact button is clicked.
+        
         selected_row = self.contact_table.currentRow()
         if selected_row >= 0:
             name_item = self.contact_table.item(selected_row, 0)
