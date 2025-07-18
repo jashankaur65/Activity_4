@@ -14,7 +14,8 @@ class ContactList(QMainWindow):
     """Represents a window that provides the UI to manage contacts."""
 
     def __init__(self):
-        """Initializes a new instance of the ContactList class."""
+        #Initializes a new instance of the ContactList class.
+        
         super().__init__()
         self.__initialize_widgets()
         self.__connect_signals()
